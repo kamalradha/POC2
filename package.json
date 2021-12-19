@@ -7,9 +7,8 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint": "eslint index.js app --fix --ext .js,.ts,.tsx",
     "compile": "tsc --noEmit -p . --pretty",
-    "format": "npm-run-all format:*",
     "prepare": "husky install"
   },
   "dependencies": {
@@ -32,6 +31,7 @@
     "eslint-plugin-node": "11",
     "eslint-plugin-promise": "4",
     "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-native": "^4.0.0",
     "husky": "^7.0.4",
     "jest": "^26.6.3",
     "lint-staged": "^12.1.3",
